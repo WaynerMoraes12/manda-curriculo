@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" width="360" height="460">
+  <title>Ilustração da lista de downloads do Edge com o menu dos três pontinhos aberto e a opção Manter marcada</title>
+  <rect width="360" height="460" rx="16" fill="#e6e9f0"/>
+  <g font-family="'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif" fill="#1b1b1b">
+    <rect x="14" y="14" width="332" height="432" rx="12" fill="#ffffff" stroke="#c8cdd8" stroke-width="1.5"/>
+    <text x="34" y="56" font-size="22" font-weight="600">Downloads</text>
+    <path d="M34 74h292" stroke="#e1e4ea" stroke-width="2"/>
+    <path d="M37 90h15l9 9v24a3 3 0 0 1-3 3H37a3 3 0 0 1-3-3v-30a3 3 0 0 1 3-3z" fill="#eef1f8" stroke="#8a93ab" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M52 90v7a3 3 0 0 0 3 3h6" fill="none" stroke="#8a93ab" stroke-width="2" stroke-linejoin="round"/>
+    <text x="72" y="106" font-size="17" font-weight="600">MandaCurriculo-win-Setup.exe</text>
+    <text x="72" y="130" font-size="16" fill="#4a4f5c">normalmente não é baixado.</text>
+    <rect x="72" y="144" width="150" height="10" rx="5" fill-opacity="0.18"/>
+    <rect x="278" y="150" width="52" height="42" rx="8" fill="#e6e9f0"/>
+    <circle cx="292" cy="171" r="3.2"/>
+    <circle cx="304" cy="171" r="3.2"/>
+    <circle cx="316" cy="171" r="3.2"/>
+    <rect x="74" y="224" width="260" height="212" rx="10" fill="#1b2140" fill-opacity="0.1"/>
+    <rect x="70" y="218" width="260" height="212" rx="10" fill="#ffffff" stroke="#c8cdd8" stroke-width="1.5"/>
+    <text x="98" y="262" font-size="23">Excluir</text>
+    <path d="M90 293c34-3 67-4 100-2l-1 28c-33-2-66-1-98 2z" fill="#ffe04b"/>
+    <text x="100" y="314" font-size="23" font-weight="600">Manter</text>
+    <rect x="98" y="356" width="170" height="10" rx="5" fill-opacity="0.18"/>
+    <rect x="98" y="388" width="130" height="10" rx="5" fill-opacity="0.18"/>
+  </g>
+  <g fill="none" stroke="#2133a6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M342 141c-20-9-57-9-69 5-12 13-11 42 6 52 19 11 54 9 66-4 12-13 9-41-8-50-7-4-15-5-23-5"/>
+    <path d="M180 282C148 276 104 278 88 286 70 295 72 322 92 329c28 8 86 6 104-6 14-10 10-31-10-38-8-2-17-3-26-3"/>
+  </g>
+  <g font-family="'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+    <circle cx="242" cy="176" r="14" fill="#2133a6"/>
+    <text x="242" y="182" fill="#ffffff">1</text>
+    <circle cx="240" cy="306" r="14" fill="#2133a6"/>
+    <text x="240" y="312" fill="#ffffff">2</text>
+  </g>
+</svg>

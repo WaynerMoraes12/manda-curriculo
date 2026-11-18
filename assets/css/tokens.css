@@ -1,0 +1,152 @@
+/*
+  Manda Currículo: tokens de design.
+  Usado pelo site e copiado para o painel do programa (app/desktop/ui/tokens.css).
+
+  Autocontido: sem url(), sem @import e sem depender de outro arquivo.
+  A fonte da marca (Atkinson Hyperlegible Next) é declarada em fonts.css, que fica
+  junto com a pasta fonts/. Sem ela, o texto cai nas fontes do sistema.
+
+  Ideia visual: caneta azul e marca-texto amarelo sobre papel.
+  - azul de caneta (--mc-tinta): o que o programa já fez (enviada, links, títulos);
+  - amarelo marca-texto (--mc-marca-texto): o que depende da pessoa (responder, baixar);
+  - risco (--mc-riscado): o que foi deixado de lado, sempre com o motivo;
+  - vermelho (--mc-proibido): o que o programa nunca faz. A margem vermelha
+    (--mc-margem) é só enfeite: nunca use como cor de texto.
+
+  Tema: segue o sistema (prefers-color-scheme). Para forçar, use
+  <html data-tema="claro"> ou <html data-tema="escuro">.
+*/
+
+:root {
+  color-scheme: light;
+
+  /* Cores (tema claro) */
+  --mc-papel: #ffffff;            /* fundo da página */
+  --mc-papel-folha: #ffffff;      /* folhas e caixas sobre o fundo */
+  --mc-pauta: #f0f3fc;            /* faixa azulada, como papel pautado */
+  --mc-linha: #d3d9ee;            /* bordas e pautas */
+  --mc-linha-forte: #aab4d8;      /* bordas de controles */
+  --mc-grafite: #1b2140;          /* texto principal */
+  --mc-grafite-suave: #4a5372;    /* texto secundário */
+  --mc-tinta: #2133a6;            /* azul de caneta */
+  --mc-tinta-forte: #18257e;      /* azul ao passar o mouse */
+  --mc-tinta-clara: #e3e8fb;      /* fundo de item escolhido */
+  --mc-titulo: #2133a6;           /* cor dos títulos */
+  --mc-sobre-tinta: #ffffff;      /* texto sobre o azul */
+  --mc-marca-texto: #ffe04b;      /* amarelo marca-texto */
+  --mc-sobre-marca: #1b2140;      /* texto sobre o amarelo */
+  --mc-margem: #e5484d;           /* linha vermelha de margem (decorativa) */
+  --mc-proibido: #c0262d;         /* texto em vermelho: o que o programa nunca faz */
+  --mc-riscado: #5b6280;          /* vaga pulada */
+  --mc-alerta: #8a4b00;           /* texto de alerta */
+  --mc-alerta-fundo: #fff4d6;     /* fundo de alerta */
+  --mc-foco: #2133a6;             /* anel de foco */
+  --mc-faixa-forte: #2133a6;      /* faixa de fechamento */
+  --mc-sobre-faixa-forte: #ffffff;
+
+  /* Tipografia */
+  --mc-fonte: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible",
+    "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --mc-peso-normal: 400;
+  --mc-peso-medio: 560;
+  --mc-peso-forte: 700;
+  --mc-peso-titulo: 780;
+  --mc-t-mini: 0.9375rem;         /* 15px: notas curtas */
+  --mc-t-pequeno: 1rem;           /* 16px */
+  --mc-t-corpo: 1.125rem;         /* 18px: texto corrido */
+  --mc-t-destaque: 1.3125rem;     /* 21px: texto de abertura */
+  --mc-t-h3: 1.3125rem;           /* 21px */
+  --mc-t-h2: clamp(1.75rem, 1.25rem + 1.9vw, 2.5rem);
+  --mc-t-h1: clamp(2.125rem, 1.2rem + 4.6vw, 4.25rem);
+  --mc-entrelinha: 1.6;
+  --mc-entrelinha-titulo: 1.1;
+  --mc-espacejamento-titulo: -0.015em;
+  --mc-medida: 38rem;             /* largura máxima de parágrafo (~70 caracteres) */
+
+  /* Espaços */
+  --mc-e-1: 0.25rem;
+  --mc-e-2: 0.5rem;
+  --mc-e-3: 0.75rem;
+  --mc-e-4: 1rem;
+  --mc-e-5: 1.5rem;
+  --mc-e-6: 2rem;
+  --mc-e-7: 3rem;
+  --mc-e-8: 4rem;
+  --mc-e-9: 6rem;
+  --mc-margem-lateral: clamp(1rem, 4vw, 2.5rem);
+  --mc-largura: 72rem;
+
+  /* Raios: papel quase reto, botão macio, caixa mais redonda */
+  --mc-raio-papel: 4px;
+  --mc-raio-botao: 12px;
+  --mc-raio-caixa: 18px;
+  --mc-raio-pilula: 999px;
+
+  /* Sombras: só para objetos de papel */
+  --mc-sombra-folha: 0 1px 2px rgb(27 33 64 / 0.08), 0 22px 44px -22px rgb(27 33 64 / 0.38);
+  --mc-sombra-baixa: 0 1px 2px rgb(27 33 64 / 0.12);
+
+  /* Movimento */
+  --mc-curva: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --mc-dur-rapida: 160ms;
+  --mc-dur-traco: 650ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    color-scheme: dark;
+    --mc-papel: #0f1433;
+    --mc-papel-folha: #161c42;
+    --mc-pauta: #151b3f;
+    --mc-linha: #2c3563;
+    --mc-linha-forte: #46518a;
+    --mc-grafite: #e9ecf8;
+    --mc-grafite-suave: #b4bcd9;
+    --mc-tinta: #a8b6ff;
+    --mc-tinta-forte: #c8d1ff;
+    --mc-tinta-clara: #26306a;
+    --mc-titulo: #c3cdff;
+    --mc-sobre-tinta: #0f1433;
+    --mc-marca-texto: #ffe04b;
+    --mc-sobre-marca: #1b2140;
+    --mc-margem: #ff6b72;
+    --mc-proibido: #ff7b81;
+    --mc-riscado: #9aa2c2;
+    --mc-alerta: #ffd27a;
+    --mc-alerta-fundo: #2e2a1a;
+    --mc-foco: #ffe04b;
+    --mc-faixa-forte: #1b2463;
+    --mc-sobre-faixa-forte: #e9ecf8;
+    --mc-sombra-folha: 0 1px 2px rgb(0 0 0 / 0.4), 0 22px 44px -22px rgb(0 0 0 / 0.7);
+    --mc-sombra-baixa: 0 1px 2px rgb(0 0 0 / 0.4);
+  }
+}
+
+:root[data-tema="escuro"] {
+  color-scheme: dark;
+  --mc-papel: #0f1433;
+  --mc-papel-folha: #161c42;
+  --mc-pauta: #151b3f;
+  --mc-linha: #2c3563;
+  --mc-linha-forte: #46518a;
+  --mc-grafite: #e9ecf8;
+  --mc-grafite-suave: #b4bcd9;
+  --mc-tinta: #a8b6ff;
+  --mc-tinta-forte: #c8d1ff;
+  --mc-tinta-clara: #26306a;
+  --mc-titulo: #c3cdff;
+  --mc-sobre-tinta: #0f1433;
+  --mc-marca-texto: #ffe04b;
+  --mc-sobre-marca: #1b2140;
+  --mc-margem: #ff6b72;
+  --mc-proibido: #ff7b81;
+  --mc-riscado: #9aa2c2;
+  --mc-alerta: #ffd27a;
+  --mc-alerta-fundo: #2e2a1a;
+  --mc-foco: #ffe04b;
+  --mc-faixa-forte: #1b2463;
+  --mc-sobre-faixa-forte: #e9ecf8;
+  --mc-sombra-folha: 0 1px 2px rgb(0 0 0 / 0.4), 0 22px 44px -22px rgb(0 0 0 / 0.7);
+  --mc-sombra-baixa: 0 1px 2px rgb(0 0 0 / 0.4);
+}

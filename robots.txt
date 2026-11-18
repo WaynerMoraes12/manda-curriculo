@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waynermoraes12.github.io/manda-curriculo/sitemap.xml

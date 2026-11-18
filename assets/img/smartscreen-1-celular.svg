@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" width="360" height="440">
+  <title>Ilustração do aviso azul do Windows, com o link Mais informações circulado</title>
+  <rect width="360" height="440" rx="16" fill="#1c5cab"/>
+  <g font-family="'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif" fill="#ffffff">
+    <text x="28" y="66" font-size="30" font-weight="300">O Windows protegeu</text>
+    <text x="28" y="104" font-size="30" font-weight="300">o computador</text>
+    <rect x="28" y="136" width="300" height="12" rx="6" fill-opacity="0.42"/>
+    <rect x="28" y="158" width="268" height="12" rx="6" fill-opacity="0.42"/>
+    <rect x="28" y="180" width="176" height="12" rx="6" fill-opacity="0.42"/>
+    <text x="36" y="262" font-size="26">Mais informações</text>
+    <path d="M36 269h206" stroke="#ffffff" stroke-width="2"/>
+    <rect x="180" y="356" width="152" height="50" rx="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <text x="256" y="388" font-size="20" text-anchor="middle">Não executar</text>
+  </g>
+  <path d="M226 230C170 220 80 222 40 236 14 246 18 274 58 282c52 8 152 6 186-10 24-12 18-34-14-40-16-4-34-5-50-5" fill="none" stroke="#ffe04b" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

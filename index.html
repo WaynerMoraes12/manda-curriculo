@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manda Currículo: o programa que se candidata às vagas por você</title>
+  <meta name="description" content="Programa grátis para Windows, em versão de teste, que procura vagas e se candidata por você todo dia, com o currículo ajustado para cada vaga e sem inventar nada. Seus dados ficam no seu computador.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#2133a6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1433" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://waynermoraes12.github.io/manda-curriculo/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icone-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Manda Currículo">
+  <meta property="og:title" content="Manda Currículo: o programa que se candidata às vagas por você">
+  <meta property="og:description" content="Grátis e em versão de teste, para Windows 10 e 11. Com o computador ligado, ele procura vagas e se candidata por você todo dia, com o currículo ajustado para cada vaga e sem inventar nada.">
+  <meta property="og:url" content="https://waynermoraes12.github.io/manda-curriculo/">
+  <meta property="og:image" content="https://waynermoraes12.github.io/manda-curriculo/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Manda Currículo: o programa que se candidata às vagas por você">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    /* Celular ou tablet de verdade (Android, iPhone, iPad): mostra o aviso "Está no celular?".
+       Roda antes de desenhar a página, para o aviso não empurrar o botão depois. */
+    (function (n) {
+      var d = n.userAgentData, u = n.userAgent || "";
+      if ((d && d.mobile) || /Android|iPhone|iPad|iPod/i.test(u) || (/Macintosh/.test(u) && n.maxTouchPoints > 1)) {
+        document.documentElement.className += " celular";
+      }
+    })(navigator);
+  </script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="dentro topo-dentro">
+      <a class="marca" href="./" aria-label="Manda Currículo, página inicial">
+        <svg class="marca-simbolo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="15" fill="#2133a6"/>
+          <path d="M19 9h18.5L49 20.5V52a3 3 0 0 1-3 3H19a3 3 0 0 1-3-3V12a3 3 0 0 1 3-3z" fill="#fff"/>
+          <path d="M37.5 9v8.5a3 3 0 0 0 3 3H49z" fill="#c9d1f5"/>
+          <path d="M21.5 22.5h11M21.5 29h20" stroke="#c9d1f5" stroke-width="3" stroke-linecap="round"/>
+          <path d="M19.5 39.8c8.6-1.9 17.2-2.5 26.6-1.7l-.6 8.6c-9-.8-17.3-.1-25.4 1.8z" fill="#ffe04b"/>
+          <path d="M23.4 41.6l5.4 5.6L41.6 32" fill="none" stroke="#2133a6" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Manda Currículo</span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="./#como-funciona">Como funciona</a></li>
+          <li><a href="ajuda.html">Ajuda</a></li>
+          <li><a href="baixar.html">Baixar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="heroi" aria-labelledby="titulo-principal">
+      <div class="dentro heroi-grade">
+        <div class="heroi-texto">
+          <h1 id="titulo-principal">O programa que se candidata às vagas por você</h1>
+          <p class="abertura">Você cadastra seu currículo uma vez. Todo dia, o Manda Currículo procura vagas que combinam com você e se candidata sozinho, com o currículo ajustado para cada vaga. Sem inventar nada.</p>
+
+          <div class="baixar" data-baixar>
+            <p class="baixar-celular">Está no celular? O Manda Currículo só funciona em computador com Windows: abra este site no computador para baixar. <button type="button" class="botao-texto" data-compartilhar hidden>Mandar o link para mim</button> <span data-compartilhar-aviso role="status"></span></p>
+            <div class="marcado">
+              <a class="botao botao-principal" href="https://github.com/WaynerMoraes12/manda-curriculo/releases/latest/download/MandaCurriculo-win-Setup.exe" data-baixar-link>
+                <svg class="botao-icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.5v11m0 0L7.5 10M12 14.5l4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>
+                <span data-baixar-rotulo>Baixar grátis para Windows</span>
+              </a>
+            </div>
+            <p class="baixar-info">Grátis. Versão de teste (beta) para Windows 10 e 11. Trabalha com o computador ligado.</p>
+            <p class="baixar-versao" data-baixar-versao hidden></p>
+            <p class="baixar-reserva" data-baixar-reserva>Se o download não começar, abra a <a href="https://github.com/WaynerMoraes12/manda-curriculo/releases">página de versões</a> e clique em <strong>MandaCurriculo-win-Setup.exe</strong>.</p>
+            <p class="baixar-depois" data-baixar-depois hidden>Se o navegador desconfiar do arquivo, escolha “Manter”. Quando o download terminar, abra o arquivo. Se o Windows mostrar “O Windows protegeu o computador”, clique em “Mais informações” e depois em “Executar assim mesmo”. <a href="baixar.html#instalar">Ver o passo a passo com imagens</a></p>
+          </div>
+
+          <p class="heroi-ajuda"><a href="baixar.html#instalar">Veja como instalar</a></p>
+        </div>
+
+        <div class="heroi-dia">
+          <div class="dia-topo">
+            <h2 class="dia-titulo">Um dia de exemplo</h2>
+            <div class="dia-escolhas" role="group" aria-label="Área do exemplo" data-escolhas hidden>
+              <button type="button" class="escolha" aria-pressed="true" data-area="administrativo">Administrativo</button>
+              <button type="button" class="escolha" aria-pressed="false" data-area="enfermagem">Enfermagem</button>
+              <button type="button" class="escolha" aria-pressed="false" data-area="vendas">Vendas</button>
+              <button type="button" class="escolha" aria-pressed="false" data-area="logistica">Logística</button>
+            </div>
+          </div>
+
+          <div class="folha animar" data-folha>
+            <p class="folha-cabeca" aria-live="polite"><span class="folha-dia">Hoje</span> <span class="folha-area" data-folha-area>Administrativo</span></p>
+
+            <div data-lista="administrativo">
+              <ol class="folha-lista" role="list">
+                <li class="item">
+                  <time class="item-hora" datetime="08:14">08:14</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Auxiliar administrativo(a)</p>
+                    <p class="item-empresa">Escritório de contabilidade</p>
+                    <p class="item-status"><svg class="visto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3.6 13.4c2.1 1.2 3.7 2.8 5 5C11.1 12.7 14.6 8.1 20.6 4.3"/></svg><span>Enviada, com o currículo ajustado para a vaga</span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="10:09">10:09</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Assistente de departamento pessoal</p>
+                    <p class="item-empresa">Rede de supermercados</p>
+                    <p class="item-status"><svg class="visto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3.6 13.4c2.1 1.2 3.7 2.8 5 5C11.1 12.7 14.6 8.1 20.6 4.3"/></svg><span>Enviada</span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="12:21">12:21</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Recepcionista</p>
+                    <p class="item-empresa">Clínica médica</p>
+                    <p class="item-status item-status-espera"><span>Aguardando sua resposta: <mark class="grifo">“Você tem disponibilidade aos sábados?”</mark></span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="14:16">14:16</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga"><s class="riscado">Coordenador(a) administrativo(a)</s></p>
+                    <p class="item-empresa">Indústria de embalagens</p>
+                    <p class="item-status item-status-pulada"><span>Pulada: pede 5 anos de experiência em coordenação</span></p>
+                  </div>
+                </li>
+              </ol>
+              <p class="folha-resumo">Até agora: 2 enviadas, 1 aguardando sua resposta e 1 pulada. Limite do dia: 15.</p>
+            </div>
+
+            <div data-lista="enfermagem" hidden>
+              <ol class="folha-lista" role="list">
+                <li class="item">
+                  <time class="item-hora" datetime="08:05">08:05</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Técnico(a) de enfermagem</p>
+                    <p class="item-empresa">Hospital particular</p>
+                    <p class="item-status"><svg class="visto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3.6 13.4c2.1 1.2 3.7 2.8 5 5C11.1 12.7 14.6 8.1 20.6 4.3"/></svg><span>Enviada, com o currículo ajustado para a vaga</span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="10:12">10:12</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Técnico(a) de enfermagem do trabalho</p>
+                    <p class="item-empresa">Indústria de alimentos</p>
+                    <p class="item-status"><svg class="visto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3.6 13.4c2.1 1.2 3.7 2.8 5 5C11.1 12.7 14.6 8.1 20.6 4.3"/></svg><span>Enviada</span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="12:30">12:30</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Auxiliar de enfermagem</p>
+                    <p class="item-empresa">Clínica de vacinação</p>
+                    <p class="item-status item-status-espera"><span>Aguardando sua resposta: <mark class="grifo">“Você aceita trabalhar em plantão noturno?”</mark></span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="14:02">14:02</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga"><s class="riscado">Enfermeiro(a) assistencial</s></p>
+                    <p class="item-empresa">Hospital</p>
+                    <p class="item-status item-status-pulada"><span>Pulada: pede graduação em enfermagem e registro de enfermeiro no COREN</span></p>
+                  </div>
+                </li>
+              </ol>
+              <p class="folha-resumo">Até agora: 2 enviadas, 1 aguardando sua resposta e 1 pulada. Limite do dia: 15.</p>
+            </div>
+
+            <div data-lista="vendas" hidden>
+              <ol class="folha-lista" role="list">
+                <li class="item">
+                  <time class="item-hora" datetime="08:20">08:20</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Vendedor(a)</p>
+                    <p class="item-empresa">Rede de calçados</p>
+                    <p class="item-status"><svg class="visto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3.6 13.4c2.1 1.2 3.7 2.8 5 5C11.1 12.7 14.6 8.1 20.6 4.3"/></svg><span>Enviada, com o currículo ajustado para a vaga</span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="10:03">10:03</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Operador(a) de caixa</p>
+                    <p class="item-empresa">Supermercado</p>
+                    <p class="item-status"><svg class="visto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3.6 13.4c2.1 1.2 3.7 2.8 5 5C11.1 12.7 14.6 8.1 20.6 4.3"/></svg><span>Enviada</span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="12:11">12:11</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Consultor(a) de vendas</p>
+                    <p class="item-empresa">Loja de móveis</p>
+                    <p class="item-status item-status-espera"><span>Aguardando sua resposta: <mark class="grifo">“Você já trabalhou nesta empresa antes?”</mark></span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="14:25">14:25</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga"><s class="riscado">Representante comercial</s></p>
+                    <p class="item-empresa">Distribuidora de bebidas</p>
+                    <p class="item-status item-status-pulada"><span>Pulada: vaga presencial em outra cidade</span></p>
+                  </div>
+                </li>
+              </ol>
+              <p class="folha-resumo">Até agora: 2 enviadas, 1 aguardando sua resposta e 1 pulada. Limite do dia: 15.</p>
+            </div>
+
+            <div data-lista="logistica" hidden>
+              <ol class="folha-lista" role="list">
+                <li class="item">
+                  <time class="item-hora" datetime="08:09">08:09</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Auxiliar de logística</p>
+                    <p class="item-empresa">Centro de distribuição</p>
+                    <p class="item-status"><svg class="visto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3.6 13.4c2.1 1.2 3.7 2.8 5 5C11.1 12.7 14.6 8.1 20.6 4.3"/></svg><span>Enviada, com o currículo ajustado para a vaga</span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="10:17">10:17</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Conferente</p>
+                    <p class="item-empresa">Atacadista</p>
+                    <p class="item-status"><svg class="visto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3.6 13.4c2.1 1.2 3.7 2.8 5 5C11.1 12.7 14.6 8.1 20.6 4.3"/></svg><span>Enviada</span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="12:04">12:04</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga">Operador(a) de empilhadeira</p>
+                    <p class="item-empresa">Indústria química</p>
+                    <p class="item-status item-status-espera"><span>Aguardando sua resposta: <mark class="grifo">“Você tem disponibilidade para o turno da noite?”</mark></span></p>
+                  </div>
+                </li>
+                <li class="item">
+                  <time class="item-hora" datetime="14:33">14:33</time>
+                  <div class="item-corpo">
+                    <p class="item-vaga"><s class="riscado">Motorista entregador(a)</s></p>
+                    <p class="item-empresa">Transportadora</p>
+                    <p class="item-status item-status-pulada"><span>Pulada: pede CNH categoria D</span></p>
+                  </div>
+                </li>
+              </ol>
+              <p class="folha-resumo">Até agora: 2 enviadas, 1 aguardando sua resposta e 1 pulada. Limite do dia: 15.</p>
+            </div>
+          </div>
+
+          <p class="dia-nota">Exemplo ilustrativo. Quantas vagas aparecem depende da sua área e da sua cidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa" id="como-funciona" aria-labelledby="titulo-como">
+      <div class="dentro">
+        <h2 id="titulo-como">Como funciona</h2>
+        <ol class="passos" role="list">
+          <li class="passo">
+            <span class="passo-num">1<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M71 13C53 3 24 8 12 30 2 50 10 79 34 89c23 9 53 1 60-24 6-21-4-44-27-53-9-3-18-3-26-1"/></svg></span>
+            <h3>Instale no seu computador</h3>
+            <p>Baixe o instalador e abra. Não precisa de senha de administrador. Depois, o Manda Currículo abre sozinho sempre que você liga o computador.</p>
+          </li>
+          <li class="passo">
+            <span class="passo-num">2<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M29 12C51 2 81 9 91 33c9 22-2 49-26 57-23 8-51-1-58-25C1 43 13 18 36 10c8-3 16-3 24-2"/></svg></span>
+            <h3>Cadastre tudo uma vez, com calma</h3>
+            <p>Traga seu currículo em PDF ou Word, ou preencha na hora. Diga que vagas você procura e em que cidades, e responda às perguntas que as empresas sempre fazem. A <a href="ajuda.html#chave-ia">página de ajuda</a> mostra, passo a passo, como criar a chave grátis da inteligência artificial do Google.</p>
+          </li>
+          <li class="passo">
+            <span class="passo-num">3<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M64 10C42 4 15 14 9 37c-6 22 7 47 31 53 24 6 50-6 54-30 4-23-11-45-35-50-9-2-17-1-25 2"/></svg></span>
+            <h3>Ele se candidata, você acompanha</h3>
+            <p>Todo dia ele procura vagas que combinam com você e se candidata com o currículo ajustado para cada uma. Numa tela simples, você vê o que foi enviado e responde o que só você sabe.</p>
+          </li>
+        </ol>
+        <p class="passos-nota">Por padrão, são até 15 candidaturas por dia e no máximo 3 na mesma empresa a cada 7 dias. Você pode mudar o limite quando quiser.</p>
+      </div>
+    </section>
+
+    <section class="faixa faixa-pauta" id="nunca" aria-labelledby="titulo-nunca">
+      <div class="dentro">
+        <h2 id="titulo-nunca">O que ele nunca faz</h2>
+        <p class="abertura-secao">Robô de candidatura tem fama de mandar qualquer coisa para qualquer vaga. O Manda Currículo foi feito para ser o contrário.</p>
+        <ul class="nunca" role="list">
+          <li>
+            <h3><span class="nunca-rotulo"><svg class="nunca-x" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.2 5.6c4.1 3.9 8 8.2 11.8 12.9M18.1 5.2C13.6 9.4 9.7 13.7 5.6 18.6"/></svg><span>Nunca<span class="nunca-dois-pontos">:</span></span></span> <s>Inventar coisas no seu currículo</s></h3>
+            <p>Ele ajusta o texto para cada vaga, mas só usa o que você cadastrou. Experiência, curso ou número que você não informou não aparece.</p>
+          </li>
+          <li>
+            <h3><span class="nunca-rotulo"><svg class="nunca-x" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.2 5.6c4.1 3.9 8 8.2 11.8 12.9M18.1 5.2C13.6 9.4 9.7 13.7 5.6 18.6"/></svg><span>Nunca<span class="nunca-dois-pontos">:</span></span></span> <s>Chutar resposta em formulário</s></h3>
+            <p>Se a empresa pergunta algo que ele não sabe, a vaga espera e a pergunta aparece para você. Você responde uma vez e, se quiser, ele lembra nas próximas.</p>
+          </li>
+          <li>
+            <h3><span class="nunca-rotulo"><svg class="nunca-x" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.2 5.6c4.1 3.9 8 8.2 11.8 12.9M18.1 5.2C13.6 9.4 9.7 13.7 5.6 18.6"/></svg><span>Nunca<span class="nunca-dois-pontos">:</span></span></span> <s>Enganar o “não sou um robô”</s></h3>
+            <p>Se o site pede para provar que é uma pessoa, ele não tenta passar por cima: pula a vaga e mostra o motivo.</p>
+          </li>
+          <li>
+            <h3><span class="nunca-rotulo"><svg class="nunca-x" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.2 5.6c4.1 3.9 8 8.2 11.8 12.9M18.1 5.2C13.6 9.4 9.7 13.7 5.6 18.6"/></svg><span>Nunca<span class="nunca-dois-pontos">:</span></span></span> <s>Mandar seus documentos para a IA</s></h3>
+            <p>CPF, RG, endereço, data de nascimento, salário atual e respostas sigilosas, como PcD, ficam criptografados (protegidos) no seu computador e só vão para o campo do formulário que pede exatamente isso.</p>
+          </li>
+          <li>
+            <h3><span class="nunca-rotulo"><svg class="nunca-x" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.2 5.6c4.1 3.9 8 8.2 11.8 12.9M18.1 5.2C13.6 9.4 9.7 13.7 5.6 18.6"/></svg><span>Nunca<span class="nunca-dois-pontos">:</span></span></span> <s>Usar seu LinkedIn sem você ligar</s></h3>
+            <p>O LinkedIn vem desligado. Para ligar, você lê e aceita um aviso: as regras do LinkedIn proíbem robôs, e a sua conta pode ser restringida.</p>
+          </li>
+          <li>
+            <h3><span class="nunca-rotulo"><svg class="nunca-x" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.2 5.6c4.1 3.9 8 8.2 11.8 12.9M18.1 5.2C13.6 9.4 9.7 13.7 5.6 18.6"/></svg><span>Nunca<span class="nunca-dois-pontos">:</span></span></span> <s>Prometer emprego</s></h3>
+            <p>Ele faz o trabalho repetitivo de se candidatar. Quem chama para entrevista e contrata é a empresa.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faixa" id="privacidade" aria-labelledby="titulo-privacidade">
+      <div class="dentro">
+        <h2 id="titulo-privacidade">Seus dados ficam no seu computador</h2>
+        <p class="abertura-secao">Não existe servidor do Manda Currículo. Você não cria conta com a gente nem faz cadastro neste site.</p>
+
+        <div class="fluxo">
+          <div class="fluxo-origem">
+            <svg class="fluxo-icone" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="4.5" y="6.5" width="39" height="27" rx="3"/><path d="M17 41.5h14M24 33.5v8"/><rect x="18" y="18.5" width="12" height="9" rx="1.5"/><path d="M20.5 18.5V16a3.5 3.5 0 0 1 7 0v2.5"/></svg>
+            <h3>No seu computador</h3>
+            <p>Tudo o que você cadastra: currículo, respostas, documentos e o histórico das candidaturas. Documentos, senhas e a chave da IA ficam criptografados.</p>
+          </div>
+          <ul class="fluxo-destinos" role="list">
+            <li class="destino">
+              <svg class="seta" viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M3 13.5c15-2.2 31-3 51-2"/><path d="M46 4.5c3.8 2.6 6.9 4.8 10 7-3 2.9-5.9 5.8-9 9.5"/></svg>
+              <div>
+                <h3>Para a IA do Google, com a sua chave</h3>
+                <p>O currículo e as respostas que não são sigilosas, como a pretensão salarial, sem nome, sem contato e sem documentos, para escolher as vagas, ajustar o texto e responder às perguntas dos formulários. Mesmo sem nome, isso fala de você, e no plano grátis o Google pode usar esse conteúdo para melhorar os produtos dele, inclusive com revisão feita por pessoas (<a href="privacidade.html#ia">veja o que isso quer dizer</a>).</p>
+              </div>
+            </li>
+            <li class="destino">
+              <svg class="seta" viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M3 13.5c15-2.2 31-3 51-2"/><path d="M46 4.5c3.8 2.6 6.9 4.8 10 7-3 2.9-5.9 5.8-9 9.5"/></svg>
+              <div>
+                <h3>Para o site da vaga</h3>
+                <p>O mesmo que você mandaria à mão: currículo, contato e as respostas do formulário.</p>
+              </div>
+            </li>
+            <li class="destino destino-nada">
+              <svg class="seta" viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M3 13.5c15-2.2 31-3 51-2"/><path d="M46 4.5c3.8 2.6 6.9 4.8 10 7-3 2.9-5.9 5.8-9 9.5"/><path class="seta-x" d="M22 3.5l13 17M35.5 3.5 21.5 20"/></svg>
+              <div>
+                <h3>Para quem faz o Manda Currículo</h3>
+                <p>Nada. O programa não manda nenhum dado seu para a gente.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <p class="secao-link"><a href="privacidade.html">Ler a política de privacidade completa</a></p>
+      </div>
+    </section>
+
+    <section class="faixa faixa-divisa" id="para-quem" aria-labelledby="titulo-para-quem">
+      <div class="dentro para-quem-grade">
+        <div>
+          <h2 id="titulo-para-quem">Para quem procura emprego, em qualquer área</h2>
+          <p class="profissoes">Técnica de enfermagem, auxiliar administrativo, vendedora, estoquista, recepcionista, operador de caixa, assistente de RH, motorista, cozinheira, analista de suporte, conferente, atendente, professora, auxiliar de limpeza e a sua profissão também.</p>
+        </div>
+        <div class="precisa">
+          <h3 id="requisitos">Do que você precisa</h3>
+          <ul class="lista-vistos" role="list">
+            <li>Um computador com Windows 10 ou 11 que fique ligado e sem entrar em suspensão (modo de descanso) durante o dia. Ele só trabalha com o computador acordado e com internet. <a href="ajuda.html#suspensao">Veja como evitar a suspensão</a>.</li>
+            <li>Uma conta de candidato na Gupy, o site onde muitas empresas recebem currículos. Criar é grátis.</li>
+            <li>Uma conta do Google, para criar a chave grátis da IA. A <a href="ajuda.html#chave-ia">ajuda</a> mostra como.</li>
+            <li>Ter 18 anos ou mais.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa faixa-divisa" id="perguntas" aria-labelledby="titulo-perguntas">
+      <div class="dentro">
+        <h2 id="titulo-perguntas">Perguntas frequentes</h2>
+        <div class="perguntas">
+          <details class="pergunta">
+            <summary>É grátis mesmo?</summary>
+            <div class="pergunta-resposta"><p>É. O Manda Currículo é gratuito. A parte de inteligência artificial usa uma chave grátis que você cria na sua conta do Google, sem cadastrar cartão de crédito. Essa chave tem um limite de uso por dia: se ele acabar, o programa avisa, e algumas vagas podem ir com o seu currículo sem ajuste até o dia seguinte.</p></div>
+          </details>
+          <details class="pergunta">
+            <summary>Preciso deixar o computador ligado?</summary>
+            <div class="pergunta-resposta"><p>Sim, ligado e sem entrar em suspensão (modo de descanso). Ele trabalha enquanto o computador está ligado e com internet, e abre sozinho quando você liga o computador. Se o computador dormir ou a tampa do notebook for fechada, ele para e continua quando o computador acordar. A tela pode apagar sem problema. Veja na <a href="ajuda.html#suspensao">ajuda</a> como impedir que o computador entre em suspensão sozinho.</p></div>
+          </details>
+          <details class="pergunta">
+            <summary>Funciona para a minha profissão?</summary>
+            <div class="pergunta-resposta"><p>Funciona para qualquer área. As vagas vêm principalmente da Gupy e também do InHire e do Remotar. O LinkedIn é opcional e vem desligado. Quantas vagas aparecem depende da sua área e da sua cidade.</p></div>
+          </details>
+          <details class="pergunta">
+            <summary>Ele inventa coisas no meu currículo?</summary>
+            <div class="pergunta-resposta"><p>Não. Para cada vaga, ele reorganiza e reescreve o seu currículo destacando o que combina, mas só com o que você cadastrou. Se a vaga pede algo que você não tem, ele não finge que tem.</p></div>
+          </details>
+          <details class="pergunta">
+            <summary>E se aparecer uma pergunta que ele não sabe responder?</summary>
+            <div class="pergunta-resposta"><p>Ele não chuta. A vaga fica esperando e a pergunta aparece no programa, em “Perguntas pendentes”. Você responde uma vez e a vaga volta para a fila.</p></div>
+          </details>
+          <details class="pergunta">
+            <summary>Quantas candidaturas ele faz por dia?</summary>
+            <div class="pergunta-resposta"><p>Até 15 por dia e no máximo 3 na mesma empresa a cada 7 dias. Dá para mudar o limite nas configurações. A ideia é mandar bem, não mandar muito.</p></div>
+          </details>
+          <details class="pergunta">
+            <summary>Vou conseguir um emprego com ele?</summary>
+            <div class="pergunta-resposta"><p>Ninguém pode prometer isso, e desconfie de quem promete. O Manda Currículo faz por você o trabalho repetitivo de se candidatar. Quem chama para entrevista e contrata é a empresa.</p></div>
+          </details>
+          <details class="pergunta">
+            <summary>É seguro? Por que o Windows mostra um aviso?</summary>
+            <div class="pergunta-resposta"><p>O programa roda no seu computador e não manda seus dados para a gente. O aviso aparece porque ele é novo e ainda não tem assinatura digital, um certificado pago. Baixe só por este site ou pela <a href="https://github.com/WaynerMoraes12/manda-curriculo/releases">página de versões do projeto no GitHub</a>, e veja na <a href="baixar.html#aviso">página de download</a> como continuar.</p><p>Um risco que você precisa conhecer: sites de vagas, inclusive a Gupy, podem limitar contas que usam automação. Por isso, por padrão, ele vai devagar: até 15 candidaturas por dia. Veja os <a href="termos.html#sites-de-vagas">termos de uso</a>.</p></div>
+          </details>
+          <details class="pergunta">
+            <summary>Funciona no celular ou no Mac?</summary>
+            <div class="pergunta-resposta"><p>Ainda não. Por enquanto, só em computador com Windows 10 ou 11.</p></div>
+          </details>
+          <details class="pergunta">
+            <summary>Quem faz o Manda Currículo?</summary>
+            <div class="pergunta-resposta"><p>Uma pessoa: é um projeto independente, mantido por <a href="https://github.com/WaynerMoraes12">@WaynerMoraes12</a>, gratuito, sem empresa por trás e sem anúncios. Para dúvidas, problemas e sugestões, use a <a href="https://github.com/WaynerMoraes12/manda-curriculo/issues">área de perguntas e problemas do projeto no GitHub (<span lang="en">Issues</span>)</a>.</p></div>
+          </details>
+        </div>
+        <p class="secao-link">Mais respostas, passo a passo, na <a href="ajuda.html">página de ajuda</a>.</p>
+      </div>
+    </section>
+
+    <section class="faixa faixa-forte" aria-labelledby="titulo-final">
+      <div class="dentro final">
+        <h2 id="titulo-final">Procurar emprego já cansa. A parte de se candidatar, deixe com ele.</h2>
+        <p>Grátis, em versão de teste, para Windows 10 e 11. A instalação não pede senha de administrador.</p>
+        <div class="baixar" data-baixar>
+          <div class="marcado">
+            <a class="botao botao-principal" href="https://github.com/WaynerMoraes12/manda-curriculo/releases/latest/download/MandaCurriculo-win-Setup.exe" data-baixar-link>
+              <svg class="botao-icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.5v11m0 0L7.5 10M12 14.5l4.5-4.5M4.5 15.5v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>
+              <span data-baixar-rotulo>Baixar grátis para Windows</span>
+            </a>
+          </div>
+          <p class="baixar-versao" data-baixar-versao hidden></p>
+          <p class="baixar-reserva" data-baixar-reserva>Se o download não começar, abra a <a href="https://github.com/WaynerMoraes12/manda-curriculo/releases">página de versões</a> e clique em <strong>MandaCurriculo-win-Setup.exe</strong>.</p>
+          <p class="baixar-depois" data-baixar-depois hidden>Se o navegador desconfiar do arquivo, escolha “Manter”. Quando o download terminar, abra o arquivo. Se o Windows mostrar “O Windows protegeu o computador”, clique em “Mais informações” e depois em “Executar assim mesmo”. <a href="baixar.html#instalar">Ver o passo a passo com imagens</a></p>
+        </div>
+        <p><a href="baixar.html#instalar">Veja como instalar</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="dentro rodape-dentro">
+      <p class="rodape-marca">Manda Currículo</p>
+      <nav aria-label="Rodapé">
+        <ul>
+          <li><a href="baixar.html">Baixar</a></li>
+          <li><a href="ajuda.html">Ajuda</a></li>
+          <li><a href="privacidade.html">Privacidade</a></li>
+          <li><a href="termos.html">Termos de uso</a></li>
+          <li><a href="https://github.com/WaynerMoraes12/manda-curriculo/issues">Fale com a gente no GitHub</a></li>
+        </ul>
+      </nav>
+      <p>Projeto independente e gratuito, mantido por <a href="https://github.com/WaynerMoraes12">@WaynerMoraes12</a>. Não tem ligação com a Gupy, o LinkedIn, o Google, a Microsoft ou outras empresas citadas.</p>
+      <p>Este site não usa cookies nem rastreadores.</p>
+    </div>
+  </footer>
+</body>
+</html>

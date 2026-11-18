@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520" width="360" height="520">
+  <title>Ilustração do aviso azul do Windows depois de Mais informações, com o botão Executar assim mesmo circulado</title>
+  <rect width="360" height="520" rx="16" fill="#1c5cab"/>
+  <g font-family="'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif" fill="#ffffff">
+    <text x="28" y="66" font-size="30" font-weight="300">O Windows protegeu</text>
+    <text x="28" y="104" font-size="30" font-weight="300">o computador</text>
+    <rect x="28" y="136" width="300" height="12" rx="6" fill-opacity="0.42"/>
+    <rect x="28" y="158" width="220" height="12" rx="6" fill-opacity="0.42"/>
+    <text x="28" y="214" font-size="19" fill-opacity="0.85">Aplicativo:</text>
+    <text x="28" y="242" font-size="20">MandaCurriculo-win-Setup.exe</text>
+    <text x="28" y="284" font-size="19" fill-opacity="0.85">Fornecedor:</text>
+    <text x="28" y="312" font-size="20">Fornecedor desconhecido</text>
+    <rect x="28" y="352" width="304" height="52" rx="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <text x="180" y="385" font-size="21" text-anchor="middle">Executar assim mesmo</text>
+    <rect x="28" y="444" width="304" height="52" rx="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <text x="180" y="477" font-size="21" text-anchor="middle">Não executar</text>
+  </g>
+  <path d="M300 337C240 329 90 329 40 339 8 347 6 413 44 421c60 10 236 8 276-6 30-12 26-64-8-74-16-4-36-5-56-5" fill="none" stroke="#ffe04b" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "name": "Manda Currículo",
+  "short_name": "Manda Currículo",
+  "description": "Programa grátis para Windows que se candidata às vagas por você, sem inventar nada.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#2133a6",
+  "icons": [
+    { "src": "assets/img/icone-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/icone-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

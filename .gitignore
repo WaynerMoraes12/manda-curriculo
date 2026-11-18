@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+Thumbs.db
+.DS_Store
+tools/screens/
+tools/marcadores.local.txt

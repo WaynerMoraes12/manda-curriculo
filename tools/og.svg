@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Manda Currículo: o programa que se candidata às vagas por você</title>
+  <style>
+    @font-face {
+      font-family: "Atkinson Hyperlegible Next";
+      font-weight: 200 800;
+      src: url("../assets/fonts/atkinson-hyperlegible-next-latin.woff2") format("woff2");
+    }
+    text { font-family: "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif; }
+    .marca { font-size: 38px; font-weight: 780; fill: #2133a6; }
+    .titulo { font-size: 72px; font-weight: 780; fill: #2133a6; letter-spacing: -1px; }
+    .sub { font-size: 30px; fill: #1b2140; }
+    .hoje { font-size: 34px; font-weight: 780; fill: #2133a6; }
+    .hora { font-size: 17px; fill: #4a5372; }
+    .vaga { font-size: 22px; font-weight: 700; fill: #1b2140; }
+    .nota { font-size: 18px; fill: #1b2140; }
+    .pulada { fill: #5b6280; }
+  </style>
+  <defs>
+    <filter id="sombra" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#1b2140" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#ffffff"/>
+
+  <g transform="translate(80 64)">
+    <rect width="60" height="60" rx="14" fill="#2133a6"/>
+    <g transform="scale(0.9375)">
+      <path d="M19 9h18.5L49 20.5V52a3 3 0 0 1-3 3H19a3 3 0 0 1-3-3V12a3 3 0 0 1 3-3z" fill="#fff"/>
+      <path d="M37.5 9v8.5a3 3 0 0 0 3 3H49z" fill="#c9d1f5"/>
+      <path d="M21.5 22.5h11M21.5 29h20" stroke="#c9d1f5" stroke-width="3" stroke-linecap="round"/>
+      <path d="M19.5 39.8c8.6-1.9 17.2-2.5 26.6-1.7l-.6 8.6c-9-.8-17.3-.1-25.4 1.8z" fill="#ffe04b"/>
+      <path d="M23.4 41.6l5.4 5.6L41.6 32" fill="none" stroke="#2133a6" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text class="marca" x="80" y="43">Manda Currículo</text>
+  </g>
+
+  <text class="titulo" x="80" y="258">O programa que</text>
+  <text class="titulo" x="80" y="340">se candidata às</text>
+  <text class="titulo" x="80" y="422">vagas por você</text>
+
+  <path d="M76 482c184-7 367-9 548-5l-3 34c-178-4-359-2-542 5z" fill="#ffe04b"/>
+  <text class="sub" x="84" y="506">Grátis, versão de teste, Windows 10 e 11</text>
+  <text class="sub" x="80" y="560">Sem inventar nada no seu currículo.</text>
+
+  <g transform="translate(772 112) rotate(2)">
+    <rect width="356" height="384" rx="4" fill="#ffffff" stroke="#d3d9ee" filter="url(#sombra)"/>
+    <path d="M66 0v384" stroke="#e5484d" stroke-opacity="0.5" stroke-width="2"/>
+    <text class="hoje" x="84" y="56">Hoje</text>
+    <path d="M0 80h356" stroke="#d3d9ee" stroke-width="2"/>
+
+    <text class="hora" x="54" y="120" text-anchor="end">08:14</text>
+    <text class="vaga" x="84" y="120">Auxiliar administrativo</text>
+    <path d="M85 141c3 1.6 5.3 3.8 7.2 6.8 3.4-7.8 8.3-14 16.3-19.3" fill="none" stroke="#2133a6" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="nota" x="116" y="148">Enviada</text>
+    <path d="M0 172h356" stroke="#d3d9ee"/>
+
+    <text class="hora" x="54" y="212" text-anchor="end">12:21</text>
+    <text class="vaga" x="84" y="212">Recepcionista</text>
+    <path d="M82 226c78-2 158-3 236-1l-1 25c-78-2-157-1-234 1z" fill="#ffe04b"/>
+    <text class="nota" x="88" y="244">Aguardando sua resposta</text>
+    <path d="M0 272h356" stroke="#d3d9ee"/>
+
+    <text class="hora" x="54" y="312" text-anchor="end">14:16</text>
+    <text class="vaga pulada" x="84" y="312">Motorista entregador</text>
+    <path d="M84 305h222" stroke="#2133a6" stroke-width="2.6" stroke-linecap="round"/>
+    <text class="nota pulada" x="84" y="342">Pulada: pede CNH categoria D</text>
+    <path d="M0 364h356" stroke="#d3d9ee"/>
+  </g>
+</svg>
